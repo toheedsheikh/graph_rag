@@ -18,7 +18,7 @@ ENTITY_TYPES = [
 @dataclass
 class LLMConfig:
     api_key: Optional[str] = os.getenv("GEMINI_API_KEY")
-    model_name: str = "gemini-1.5-flash"
+    model_name: str = "gemini-2.5-flash"
     temperature: float = 0.0
     mock_mode: bool = True # Default to Mock mode for the assignment
 

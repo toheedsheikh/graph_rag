@@ -52,6 +52,16 @@ python main.py --live
 
 _Note: Ensure valid `GEMINI_API_KEY` is set._
 
+### How to Verify Live Mode works?
+
+1. **Check Console Logs**:
+   - **Mock Mode**: Logs `INFO:src.extraction:MockExtractor: Retrieving gold standard data...`
+   - **Live Mode**: Logs `INFO:src.extraction:GeminiExtractor: Processing chunk X with LLM...`
+2. **Add Custom Data**:
+   - Add a new chunk with `id: 99` to `data/input_chunks.json`.
+   - **Mock Mode**: Will warn "No gold standard data for chunk 99".
+   - **Live Mode**: Will successfully extract entities from the new text.
+
 ## Output
 
 Artifacts are generated in the `output/` directory:
