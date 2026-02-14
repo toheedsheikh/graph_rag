@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# GraphRAG Output
+# output/ # Keeping output in git for this assignment as per deliverables usually, but user can uncomment if needed.
+# Actually, usually we don't commit output, but for an assignment it might be good to show.
+# Let's ignore it for now to keep repo clean, unless user wants it. 
+# I'll keep output in for now as it's an assignment artifact.
+# output/
+
+# Logs
+*.log

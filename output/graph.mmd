@@ -1,0 +1,91 @@
+graph TD
+ %% =========================
+ %% Generated Graph
+ %% =========================
+ Swiggy["Company: Swiggy<br/><b>Tags/Attributes</b>: Strategy=High-frequency Hyperlocal Commerce; Culture=Innovation-led DNA"]
+ Platform["Platform: Platform<br/><b>Tags/Attributes</b>: Principle=Convenience-first; ValueProps=Fast delivery, Quality & assortment; Capability=Personalised recommendations"]
+ Food["Service: Food"]
+ Dining["Service: Dining"]
+ Grocery["Service: Grocery"]
+ Hyperlocal["Service: Hyperlocal"]
+ RestPartners["Partner: RestPartners"]
+ MerchPartners["Partner: MerchPartners"]
+ BrandPartners["Partner: BrandPartners"]
+ DeliveryPartners["Partner: DeliveryPartners"]
+ Tech["Capability: Tech<br/><b>Tags/Attributes</b>: Asset=Reusable tech stack (quick, low-cost innovation)"]
+ Analytics["Capability: Analytics"]
+ Fulfilment["Capability: Fulfilment"]
+ Membership["Capability: Membership"]
+ Instamart["Product: Instamart<br/><b>Tags/Attributes</b>: launch_year=2020; scale=124 cities (as of 31-Mar-2025)"]
+ Genie["Product: Genie<br/><b>Tags/Attributes</b>: launch_year=2020"]
+ Minis["Product: Minis<br/><b>Tags/Attributes</b>: launch_year=2022"]
+ Mall["Product: Mall<br/><b>Tags/Attributes</b>: launch_year=2023; integrated_with=Instamart"]
+ Bolt["Feature: Bolt<br/><b>Tags/Attributes</b>: launch_year=2024"]
+ Scenes["Product: Scenes<br/><b>Tags/Attributes</b>: launch_year=2024"]
+ SNACC["Product: SNACC<br/><b>Tags/Attributes</b>: launch_year=2025"]
+ Pyng["Product: Pyng<br/><b>Tags/Attributes</b>: launch_year=2025"]
+ QuickBites["Product: QuickBites"]
+ CreditCard["Product: CreditCard<br/><b>Tags/Attributes</b>: launch_year=2023"]
+ Dineout["Acquisition Target: Dineout<br/><b>Tags/Attributes</b>: acquired_year=2022"]
+ Lynk["Acquisition Target: Lynk<br/><b>Tags/Attributes</b>: acquired_year=2023; stake=100%"]
+ E2013["Event: E2013<br/><b>Tags/Attributes</b>: Tags=Corporate; year=2013"]
+ E2014["Event: E2014<br/><b>Tags/Attributes</b>: Tags=Launch, Pioneer; year=2014"]
+ E2015["Event: E2015<br/><b>Tags/Attributes</b>: Tags=Fundraise; year=2015"]
+ E2019["Event: E2019<br/><b>Tags/Attributes</b>: Tags=Milestone, Scale; year=2019"]
+ E2020["Event: E2020<br/><b>Tags/Attributes</b>: Tags=Launch, Pioneer(Quick Commerce); year=2020"]
+ E2021["Event: E2021<br/><b>Tags/Attributes</b>: Tags=Launch; year=2021"]
+ E2022["Event: E2022<br/><b>Tags/Attributes</b>: Tags=Acquisition, Launch, Scale; year=2022"]
+ E2023["Event: E2023<br/><b>Tags/Attributes</b>: Tags=Launch, Acquisition; year=2023"]
+ E2024["Event: E2024<br/><b>Tags/Attributes</b>: Tags=Listing, Launch, Milestone; year=2024"]
+ E2025["Event: E2025<br/><b>Tags/Attributes</b>: Tags=Milestone, Launch; year=2025"]
+
+ Swiggy -->|operates| Platform
+ Swiggy -->|acquired| Dineout
+ Swiggy -->|acquired| Lynk
+ Swiggy -->|has_event| E2013
+ Swiggy -->|has_event| E2014
+ Swiggy -->|has_event| E2015
+ Swiggy -->|has_event| E2019
+ Swiggy -->|has_event| E2020
+ Swiggy -->|has_event| E2021
+ Swiggy -->|has_event| E2022
+ Swiggy -->|has_event| E2023
+ Swiggy -->|has_event| E2024
+ Swiggy -->|has_event| E2025
+ Platform -->|offers| Food
+ Platform -->|offers| Dining
+ Platform -->|offers| Grocery
+ Platform -->|offers| Hyperlocal
+ Platform -->|supported_by| RestPartners
+ Platform -->|supported_by| MerchPartners
+ Platform -->|supported_by| BrandPartners
+ Platform -->|supported_by| DeliveryPartners
+ Platform -->|enabled_by| Tech
+ Platform -->|enabled_by| Analytics
+ Platform -->|enabled_by| Fulfilment
+ Platform -->|enabled_by| Membership
+ Food -->|feature| Bolt
+ Dining -->|events_experiences_surface| Scenes
+ Grocery -->|executed_via| Instamart
+ Grocery -->|integrated_surface| Mall
+ Hyperlocal -->|includes| Genie
+ Hyperlocal -->|includes| Minis
+ Membership -->|benefits_across| Food
+ Membership -->|benefits_across| Grocery
+ Membership -->|benefits_across| Dining
+ Membership -->|includes| QuickBites
+ Membership -->|includes| CreditCard
+ Dineout -->|expanded_surface| Dining
+ E2014 -->|launched| Food
+ E2020 -->|launched| Instamart
+ E2020 -->|launched| Genie
+ E2021 -->|launched| Membership
+ E2022 -->|acquired| Dineout
+ E2022 -->|launched| Minis
+ E2023 -->|launched| CreditCard
+ E2023 -->|acquired| Lynk
+ E2023 -->|launched| Mall
+ E2024 -->|launched| Bolt
+ E2024 -->|launched| Scenes
+ E2025 -->|launched| SNACC
+ E2025 -->|launched| Pyng

@@ -1,0 +1,805 @@
+{
+  "nodes": [
+    {
+      "id": "Swiggy",
+      "type": "Company",
+      "attributes": {
+        "Strategy": "High-frequency Hyperlocal Commerce",
+        "Culture": "Innovation-led DNA"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Platform",
+      "type": "Platform",
+      "attributes": {
+        "description": "Consumer Convenience Platform",
+        "Principle": "Convenience-first",
+        "ValueProps": "Fast delivery, Quality & assortment",
+        "Capability": "Personalised recommendations"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Food",
+      "type": "Service",
+      "attributes": {
+        "description": "Food Delivery"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Dining",
+      "type": "Service",
+      "attributes": {
+        "description": "Dining Out & Events"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Grocery",
+      "type": "Service",
+      "attributes": {
+        "description": "Grocery & Household Items"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Hyperlocal",
+      "type": "Service",
+      "attributes": {
+        "description": "Other Hyperlocal Services"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "RestPartners",
+      "type": "Partner",
+      "attributes": {
+        "description": "Restaurant Partners"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "MerchPartners",
+      "type": "Partner",
+      "attributes": {
+        "description": "Merchant Partners"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "BrandPartners",
+      "type": "Partner",
+      "attributes": {
+        "description": "Brand Partners"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "DeliveryPartners",
+      "type": "Partner",
+      "attributes": {
+        "description": "Delivery Partners"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Tech",
+      "type": "Capability",
+      "attributes": {
+        "description": "Technology",
+        "Asset": "Reusable tech stack (quick, low-cost innovation)"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Analytics",
+      "type": "Capability",
+      "attributes": {
+        "description": "Analytics"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Fulfilment",
+      "type": "Capability",
+      "attributes": {
+        "description": "Fulfilment"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Membership",
+      "type": "Capability",
+      "attributes": {
+        "description": "Membership (Swiggy One)"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Instamart",
+      "type": "Product",
+      "attributes": {
+        "description": "Swiggy Instamart",
+        "launch_year": "2020",
+        "scale": "124 cities (as of 31-Mar-2025)"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Genie",
+      "type": "Product",
+      "attributes": {
+        "description": "Swiggy Genie",
+        "launch_year": "2020"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Minis",
+      "type": "Product",
+      "attributes": {
+        "description": "Swiggy Minis",
+        "launch_year": "2022"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Mall",
+      "type": "Product",
+      "attributes": {
+        "description": "Swiggy Mall",
+        "launch_year": "2023",
+        "integrated_with": "Instamart"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Bolt",
+      "type": "Feature",
+      "attributes": {
+        "description": "Bolt (10-min Food Delivery)",
+        "launch_year": "2024"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Scenes",
+      "type": "Product",
+      "attributes": {
+        "description": "Swiggy Scenes (Events & Experiences)",
+        "launch_year": "2024"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "SNACC",
+      "type": "Product",
+      "attributes": {
+        "description": "SNACC",
+        "launch_year": "2025"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Pyng",
+      "type": "Product",
+      "attributes": {
+        "description": "Pyng",
+        "launch_year": "2025"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "QuickBites",
+      "type": "Product",
+      "attributes": {
+        "description": "Quick Bites"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "CreditCard",
+      "type": "Product",
+      "attributes": {
+        "description": "Co-branded Credit Card (HDFC)",
+        "launch_year": "2023"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Dineout",
+      "type": "Acquisition Target",
+      "attributes": {
+        "description": "Dineout",
+        "acquired_year": "2022"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Lynk",
+      "type": "Acquisition Target",
+      "attributes": {
+        "description": "Lynk",
+        "acquired_year": "2023",
+        "stake": "100%"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "E2013",
+      "type": "Event",
+      "attributes": {
+        "description": "Incorporation (2013)",
+        "Tags": "Corporate",
+        "year": "2013"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2014",
+      "type": "Event",
+      "attributes": {
+        "description": "Launch Food Delivery (2014)",
+        "Tags": "Launch, Pioneer",
+        "year": "2014"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2015",
+      "type": "Event",
+      "attributes": {
+        "description": "First major fundraise (2015)",
+        "Tags": "Fundraise",
+        "year": "2015"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2019",
+      "type": "Event",
+      "attributes": {
+        "description": "Food delivery scale to 500+ cities (2019)",
+        "Tags": "Milestone, Scale",
+        "year": "2019"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2020",
+      "type": "Event",
+      "attributes": {
+        "description": "Launch Instamart & Genie (2020)",
+        "Tags": "Launch, Pioneer(Quick Commerce)",
+        "year": "2020"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2021",
+      "type": "Event",
+      "attributes": {
+        "description": "Launch Swiggy One (2021)",
+        "Tags": "Launch",
+        "year": "2021"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2022",
+      "type": "Event",
+      "attributes": {
+        "description": "Acquire Dineout + Launch Minis + Instamart expands (2022)",
+        "Tags": "Acquisition, Launch, Scale",
+        "year": "2022"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2023",
+      "type": "Event",
+      "attributes": {
+        "description": "Launch Credit Card + Acquire Lynk + Launch Mall (2023)",
+        "Tags": "Launch, Acquisition",
+        "year": "2023"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2024",
+      "type": "Event",
+      "attributes": {
+        "description": "Public listing + Bolt + Scenes + 5.7M members (2024)",
+        "Tags": "Listing, Launch, Milestone",
+        "year": "2024"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "E2025",
+      "type": "Event",
+      "attributes": {
+        "description": "120M users + Launch SNACC & Pyng (2025)",
+        "Tags": "Milestone, Launch",
+        "year": "2025"
+      },
+      "provenance": [
+        7
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "Swiggy",
+      "target": "Platform",
+      "relation": "operates",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Dineout",
+      "relation": "acquired",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Lynk",
+      "relation": "acquired",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2013",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2014",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2015",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2019",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2020",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2021",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2022",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2023",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2024",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "E2025",
+      "relation": "has_event",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Food",
+      "relation": "offers",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Dining",
+      "relation": "offers",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Grocery",
+      "relation": "offers",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Hyperlocal",
+      "relation": "offers",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "RestPartners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "MerchPartners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "BrandPartners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "DeliveryPartners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Tech",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Analytics",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Fulfilment",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Platform",
+      "target": "Membership",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Food",
+      "target": "Bolt",
+      "relation": "feature",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Dining",
+      "target": "Scenes",
+      "relation": "events_experiences_surface",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Grocery",
+      "target": "Instamart",
+      "relation": "executed_via",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Grocery",
+      "target": "Mall",
+      "relation": "integrated_surface",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Hyperlocal",
+      "target": "Genie",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Hyperlocal",
+      "target": "Minis",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Membership",
+      "target": "Food",
+      "relation": "benefits_across",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Membership",
+      "target": "Grocery",
+      "relation": "benefits_across",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Membership",
+      "target": "Dining",
+      "relation": "benefits_across",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Membership",
+      "target": "QuickBites",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Membership",
+      "target": "CreditCard",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Dineout",
+      "target": "Dining",
+      "relation": "expanded_surface",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "E2014",
+      "target": "Food",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2020",
+      "target": "Instamart",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2020",
+      "target": "Genie",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2021",
+      "target": "Membership",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2022",
+      "target": "Dineout",
+      "relation": "acquired",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2022",
+      "target": "Minis",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2023",
+      "target": "CreditCard",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2023",
+      "target": "Lynk",
+      "relation": "acquired",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2023",
+      "target": "Mall",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2024",
+      "target": "Bolt",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2024",
+      "target": "Scenes",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2025",
+      "target": "SNACC",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "E2025",
+      "target": "Pyng",
+      "relation": "launched",
+      "provenance": [
+        7
+      ]
+    }
+  ]
+}
