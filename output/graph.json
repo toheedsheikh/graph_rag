@@ -1,51 +1,17 @@
 {
   "nodes": [
     {
-      "id": "AlphaCorp",
+      "id": "Tesla",
       "type": "Company",
       "attributes": {
-        "founded": ""
+        "type": "EV",
+        "produces": "Model Y"
       },
       "provenance": [
-        201,
-        202
-      ]
-    },
-    {
-      "id": "AlphaBot",
-      "type": "Product",
-      "attributes": {},
-      "provenance": [
-        201
-      ]
-    },
-    {
-      "id": "BetaData",
-      "type": "Company",
-      "attributes": {
-        "founded": "2018"
-      },
-      "provenance": [
-        202
+        301,
+        302
       ]
     }
   ],
-  "edges": [
-    {
-      "source": "AlphaCorp",
-      "target": "AlphaBot",
-      "relation": "produced",
-      "provenance": [
-        201
-      ]
-    },
-    {
-      "source": "AlphaCorp",
-      "target": "BetaData",
-      "relation": "acquired",
-      "provenance": [
-        202
-      ]
-    }
-  ]
+  "edges": []
 }

@@ -10,14 +10,22 @@ class GraphBuilder:
     def __init__(self):
         self.graph = nx.DiGraph()
         self.provenance = {} # Map node/edge to chunk IDs
+        self.name_map = {} # Lowercase -> Canonical Name (e.g., "tesla" -> "Tesla")
 
     def _normalize_name(self, name: str) -> str:
         """
         Normalize entity name for deduplication (case-insensitive).
         Returns the canonical name (first seen casing or most frequent).
-        For now, we'll store a mapping of lower_case -> DisplayName.
         """
-        return name.strip()
+        name_clean = name.strip()
+        name_lower = name_clean.lower()
+        
+        if name_lower in self.name_map:
+            return self.name_map[name_lower]
+        
+        # New entity, store mapping
+        self.name_map[name_lower] = name_clean
+        return name_clean
 
     def add_chunk_data(self, chunk_data: Dict[str, Any], chunk_id: int):
         """
@@ -86,6 +94,8 @@ class GraphBuilder:
                         attributes=node_data.get("attributes", {}),
                         provenance=node_data.get("provenance", [])
                     )
+                    # Rebuild name map
+                    self.name_map[node_id.lower()] = node_id
 
             # Restore Edges
             for edge_data in data.get("edges", []):
