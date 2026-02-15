@@ -49,28 +49,53 @@ class GeminiExtractor(BaseExtractor):
         logger.info(f"GeminiExtractor: Processing chunk {chunk_id} with LLM")
         
         prompt = f"""
-        You are an expert Knowledge Graph architect. Your task is to extract structured data from the following text chunk to build a GraphRAG-ready knowledge graph.
+        You are an expert Knowledge Graph Architect. Your task is to extract structured data from the following text chunk to build a high-fidelity GraphRAG knowledge graph.
         
-        Extract the following:
-        1. **Entities**: Identify Core Entities (Company, Platform, Service, Product, Capability, Partner, etc.).
-           - Include 'name', 'type', and a dictionary of 'attributes' (e.g., description, tags, years).
-        2. **Relationships**: Identify relationships between these entities. 
-           - Use neutral verbs like: operates, offers, enabled_by, supported_by, includes, integrated_surface, executed_via, acquired, has_event, launched, described_in.
-           - If unsure, use 'related_to'.
-           - Format: source, target, relation.
-        3. **Events**: Identify timeline events specific to the company history.
-           - Treat them as entities with type "Event" or separate event objects if preferred, but ensure they link to the company.
+        **Goal**: Build a graph that captures the *structure*, *capabilities*, and *evolution* of the company described.
         
+        **3-Step Extraction Rules**:
+
+        1. **Entities**: Identify these specific types:
+           - **Company** (e.g., Swiggy, Lynk)
+           - **Platform** (Abstract layers like "Consumer Convenience Platform", "Unified Platform")
+           - **Service** (e.g., "Food Delivery", "Instamart", "Genie")
+           - **Product** (e.g., "Swiggy One", "Credit Card")
+           - **Capability** (Foundational elements like "Technology", "Fulfilment", "Analytics")
+           - **Partner** (Categories like "Restaurant Partners", "Delivery Partners")
+           - **Event** (Major milestones: launches, acquisitions, IPOs. Name format: "Launch <Name> (<Year>)")
+           
+           *Attributes*: For every entity, extract rich metadata into the 'attributes' dictionary:
+           - **description**: Brief summary.
+           - **tags**: Keywords (e.g., "Strategy", "Culture").
+           - **year**: Launch or acquisition year.
+           - **scale**: Numbers (e.g., "124 cities", "500+ cities").
+           - **role**: Specific function.
+
+        2. **Relationships**: Connect entities using *only* these verbs where possible:
+           - **Structure**: `operates` (Company->Platform), `encompasses` (Platform->Service), `supported_by` (Platform->Partners), `enabled_by` (Platform->Capability).
+           - **Actions**: `launched` (Company->Product/Service), `acquired` (Company->Company), `has_event` (Company->Event).
+           - **Hierarchy**: `offers` (Company->Service), `includes` (Membership->Benefits), `executed_via` (Service->Product).
+           - **Fallback**: `related_to`.
+
+        3. **Events**: 
+           - treat Events as distinct entities (Type="Event").
+           - Link them to the Company via `has_event`.
+           - Link the Event to the affected entity via `launched`, `acquired`, or `milestone_for`.
+
+        **IMPORTANT**: 
+        - Capture the **intermediary "Platform" layer** if mentioned (e.g., Swiggy -> operates -> Platform -> offers -> Food Delivery). Do not just flatten everything to the Company.
+        - Deduplicate similar concepts (e.g., "Food delivery business" and "Food Delivery" should be one entity).
+
         **Output Format**:
-        Return ONLY a valid JSON object with the following structure:
+        Return ONLY a valid JSON object:
         {{
             "entities": [
-                {{ "name": "EntityName", "type": "EntityType", "attributes": {{ "key": "value" }} }}
+                {{ "name": "Name", "type": "Type", "attributes": {{ "key": "value" }} }}
             ],
             "relationships": [
-                {{ "source": "EntityName", "target": "TargetName", "relation": "relation_verb" }}
+                {{ "source": "Name", "target": "Name", "relation": "verb" }}
             ],
-            "events": [] 
+            "events": []
         }}
         
         **Text Chunk**:

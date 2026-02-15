@@ -2,4 +2,94 @@ graph TD
  %% =========================
  %% Generated Graph
  %% =========================
- Tesla["Company: Tesla<br/><b>Tags/Attributes</b>: type=EV; produces=Model Y"]
+ Swiggy["Company: Swiggy<br/><b>Tags/Attributes</b>: tags=E-commerce, Food Delivery, Quick Commerce; year=2013"]
+ ConsumerConveniencePlatform["Platform: Consumer Convenience Platform"]
+ Fooddelivery["Service: Food delivery<br/><b>Tags/Attributes</b>: role=primary service category; tags=Core Service; year=2014; scale=over 500 cities (2019)"]
+ DiningoutandEvents["Service: Dining out and Events<br/><b>Tags/Attributes</b>: role=primary service category"]
+ GroceryandHouseholditemsdelivery["Service: Grocery and Household items delivery<br/><b>Tags/Attributes</b>: role=primary service category"]
+ Otherhyperlocalservices["Service: Other hyperlocal services<br/><b>Tags/Attributes</b>: role=primary service category"]
+ Restaurantpartners["Partner: Restaurant partners<br/><b>Tags/Attributes</b>: role=supporting partner category"]
+ Merchantpartners["Partner: Merchant partners<br/><b>Tags/Attributes</b>: role=supporting partner category"]
+ Brandpartners["Partner: Brand partners<br/><b>Tags/Attributes</b>: role=supporting partner category"]
+ Deliverypartners["Partner: Delivery partners<br/><b>Tags/Attributes</b>: role=supporting partner category"]
+ Technology["Capability: Technology<br/><b>Tags/Attributes</b>: role=foundational capability; tags=Core Capability, Engineering"]
+ Analytics["Capability: Analytics<br/><b>Tags/Attributes</b>: role=foundational capability; tags=Data Science, Personalization"]
+ Fulfilment["Capability: Fulfilment<br/><b>Tags/Attributes</b>: role=foundational capability; tags=Logistics, Operations"]
+ Membership["Capability: Membership<br/><b>Tags/Attributes</b>: role=foundational capability"]
+ SwiggyOne["Product: Swiggy One<br/><b>Tags/Attributes</b>: tags=Membership Program; year=2021; scale=crossed 5.7 million members (2024)"]
+ Dineout["Company: Dineout<br/><b>Tags/Attributes</b>: year=2022"]
+ HyperlocalCommercePlatform["Platform: Hyperlocal Commerce Platform"]
+ UnifiedTechnologyPlatform["Platform: Unified Technology Platform<br/><b>Tags/Attributes</b>: tags=Technology, Innovation"]
+ SwiggyOneMembership["Platform: Swiggy One Membership<br/><b>Tags/Attributes</b>: tags=Product, Membership"]
+ QuickCommerce["Service: Quick Commerce<br/><b>Tags/Attributes</b>: tags=Core Service; year=2020"]
+ Instamart["Service: Instamart<br/><b>Tags/Attributes</b>: scale=124 cities (as of 31 March 2025) from 2 cities in less than 5 years of launch; tags=Quick Commerce, Growth"]
+ 10minuteFoodDelivery["Service: 10-minute Food Delivery"]
+ RestaurantReservationsandPayments["Service: Restaurant Reservations and Payments<br/><b>Tags/Attributes</b>: tags=Dining, Payments"]
+ EventsandExperiences["Service: Events and Experiences"]
+ QuickBites["Service: Quick Bites"]
+ CobrandedCreditCard["Product: Co-branded Credit Card<br/><b>Tags/Attributes</b>: tags=Financial Product"]
+ InnovationledCulture["Capability: Innovation-led Culture<br/><b>Tags/Attributes</b>: tags=Culture, Strategy"]
+ Scalability["Capability: Scalability<br/><b>Tags/Attributes</b>: tags=Growth, Business Strategy"]
+ UrbanConveniencePlatform["Platform: Urban Convenience Platform<br/><b>Tags/Attributes</b>: tags=Strategy, Ecosystem; scale=surpassed 120 million transacted users (2025)"]
+ SwiggyInstamart["Service: Swiggy Instamart<br/><b>Tags/Attributes</b>: year=2020; scale=25 cities with over 400 dark stores and over 8,400 SKUs (2022)"]
+ SwiggyGenie["Service: Swiggy Genie<br/><b>Tags/Attributes</b>: year=2020"]
+ SwiggyMinis["Service: Swiggy Minis<br/><b>Tags/Attributes</b>: year=2022"]
+ SwiggyHDFCBankcobrandedcreditcard["Product: Swiggy-HDFC Bank co-branded credit card<br/><b>Tags/Attributes</b>: year=2023"]
+ Lynk["Company: Lynk<br/><b>Tags/Attributes</b>: year=2023"]
+ SwiggyMall["Product: Swiggy Mall<br/><b>Tags/Attributes</b>: year=2023"]
+ Bolt["Service: Bolt<br/><b>Tags/Attributes</b>: year=2024"]
+ SwiggyScenes["Service: Swiggy Scenes<br/><b>Tags/Attributes</b>: year=2024"]
+ SNACC["Service: SNACC<br/><b>Tags/Attributes</b>: year=2025"]
+ Pyng["Service: Pyng<br/><b>Tags/Attributes</b>: year=2025"]
+ HDFCBank["Partner: HDFC Bank<br/><b>Tags/Attributes</b>: role=Co-branding Partner"]
+
+ Swiggy -->|operates| ConsumerConveniencePlatform
+ Swiggy -->|operates| HyperlocalCommercePlatform
+ Swiggy -->|operates| UnifiedTechnologyPlatform
+ Swiggy -->|offers| Fooddelivery
+ Swiggy -->|offers| QuickCommerce
+ Swiggy -->|offers| Instamart
+ Swiggy -->|offers| SwiggyOneMembership
+ Swiggy -->|enabled_by| InnovationledCulture
+ Swiggy -->|enabled_by| Technology
+ Swiggy -->|enabled_by| Fulfilment
+ Swiggy -->|enabled_by| Analytics
+ Swiggy -->|enabled_by| Scalability
+ Swiggy -->|operates| UrbanConveniencePlatform
+ ConsumerConveniencePlatform -->|encompasses| Fooddelivery
+ ConsumerConveniencePlatform -->|encompasses| DiningoutandEvents
+ ConsumerConveniencePlatform -->|encompasses| GroceryandHouseholditemsdelivery
+ ConsumerConveniencePlatform -->|encompasses| Otherhyperlocalservices
+ ConsumerConveniencePlatform -->|supported_by| Restaurantpartners
+ ConsumerConveniencePlatform -->|supported_by| Merchantpartners
+ ConsumerConveniencePlatform -->|supported_by| Brandpartners
+ ConsumerConveniencePlatform -->|supported_by| Deliverypartners
+ ConsumerConveniencePlatform -->|enabled_by| Technology
+ ConsumerConveniencePlatform -->|enabled_by| Analytics
+ ConsumerConveniencePlatform -->|enabled_by| Fulfilment
+ ConsumerConveniencePlatform -->|enabled_by| Membership
+ Fooddelivery -->|supported_by| Restaurantpartners
+ SwiggyOne -->|related_to| Membership
+ Dineout -->|related_to| RestaurantReservationsandPayments
+ HyperlocalCommercePlatform -->|encompasses| Fooddelivery
+ HyperlocalCommercePlatform -->|encompasses| QuickCommerce
+ HyperlocalCommercePlatform -->|encompasses| Instamart
+ UnifiedTechnologyPlatform -->|enables| InnovationledCulture
+ UnifiedTechnologyPlatform -->|enables| Scalability
+ SwiggyOneMembership -->|includes| 10minuteFoodDelivery
+ SwiggyOneMembership -->|includes| Fooddelivery
+ SwiggyOneMembership -->|includes| Instamart
+ SwiggyOneMembership -->|includes| RestaurantReservationsandPayments
+ SwiggyOneMembership -->|includes| EventsandExperiences
+ SwiggyOneMembership -->|includes| CobrandedCreditCard
+ SwiggyOneMembership -->|includes| QuickBites
+ UrbanConveniencePlatform -->|encompasses| Fooddelivery
+ UrbanConveniencePlatform -->|encompasses| SwiggyInstamart
+ UrbanConveniencePlatform -->|encompasses| SwiggyGenie
+ UrbanConveniencePlatform -->|encompasses| SwiggyMinis
+ UrbanConveniencePlatform -->|encompasses| Bolt
+ UrbanConveniencePlatform -->|encompasses| SwiggyScenes
+ UrbanConveniencePlatform -->|encompasses| SNACC
+ UrbanConveniencePlatform -->|encompasses| Pyng
+ SwiggyHDFCBankcobrandedcreditcard -->|supported_by| HDFCBank
+ SwiggyMall -->|integrated_with| SwiggyInstamart

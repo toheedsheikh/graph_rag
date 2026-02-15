@@ -1,3 +1,4 @@
+import re
 from typing import Dict, Any
 
 class MermaidRenderer:
@@ -75,4 +76,5 @@ class MermaidRenderer:
         but we are using the ID in the bracket `ID["Label"]`. 
         The *ID* part must be clean. 
         """
-        return text.replace(" ", "").replace("-", "").replace("&", "")
+        # Remove anything that isn't alphanumeric
+        return re.sub(r'[^a-zA-Z0-9]', '', text)

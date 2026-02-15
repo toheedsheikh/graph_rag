@@ -1,17 +1,857 @@
 {
   "nodes": [
     {
-      "id": "Tesla",
+      "id": "Swiggy",
       "type": "Company",
       "attributes": {
-        "type": "EV",
-        "produces": "Model Y"
+        "description": "Urban convenience platform company, incorporated under the name Bengaluru",
+        "tags": "E-commerce, Food Delivery, Quick Commerce",
+        "year": "2013"
       },
       "provenance": [
-        301,
-        302
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "Consumer Convenience Platform",
+      "type": "Platform",
+      "attributes": {
+        "description": "easy-to-use unified platform"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Food delivery",
+      "type": "Service",
+      "attributes": {
+        "role": "primary service category",
+        "description": "Initial business of Swiggy",
+        "tags": "Core Service",
+        "year": "2014",
+        "scale": "over 500 cities (2019)"
+      },
+      "provenance": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "Dining out and Events",
+      "type": "Service",
+      "attributes": {
+        "role": "primary service category"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Grocery and Household items delivery",
+      "type": "Service",
+      "attributes": {
+        "role": "primary service category"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Other hyperlocal services",
+      "type": "Service",
+      "attributes": {
+        "role": "primary service category"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Restaurant partners",
+      "type": "Partner",
+      "attributes": {
+        "role": "supporting partner category",
+        "description": "Partners (restaurants) collaborating with Swiggy for its food delivery service."
+      },
+      "provenance": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "Merchant partners",
+      "type": "Partner",
+      "attributes": {
+        "role": "supporting partner category"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Brand partners",
+      "type": "Partner",
+      "attributes": {
+        "role": "supporting partner category"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Delivery partners",
+      "type": "Partner",
+      "attributes": {
+        "role": "supporting partner category"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Technology",
+      "type": "Capability",
+      "attributes": {
+        "role": "foundational capability",
+        "description": "Capability related to reusable tech stack, enabling innovation.",
+        "tags": "Core Capability, Engineering"
+      },
+      "provenance": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "Analytics",
+      "type": "Capability",
+      "attributes": {
+        "role": "foundational capability",
+        "description": "Capability for personalized recommendations and data-driven insights.",
+        "tags": "Data Science, Personalization"
+      },
+      "provenance": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "Fulfilment",
+      "type": "Capability",
+      "attributes": {
+        "role": "foundational capability",
+        "description": "Capability ensuring faster delivery times and efficient operations.",
+        "tags": "Logistics, Operations"
+      },
+      "provenance": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "Membership",
+      "type": "Capability",
+      "attributes": {
+        "role": "foundational capability"
+      },
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "id": "Swiggy One",
+      "type": "Product",
+      "attributes": {
+        "description": "Membership program offering benefits across services",
+        "tags": "Membership Program",
+        "year": "2021",
+        "scale": "crossed 5.7 million members (2024)"
+      },
+      "provenance": [
+        5,
+        7
+      ]
+    },
+    {
+      "id": "Dineout",
+      "type": "Company",
+      "attributes": {
+        "description": "Acquired company",
+        "year": "2022"
+      },
+      "provenance": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "Hyperlocal Commerce Platform",
+      "type": "Platform",
+      "attributes": {
+        "description": "Platform for high-frequency hyperlocal commerce categories."
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Unified Technology Platform",
+      "type": "Platform",
+      "attributes": {
+        "description": "Primary app and underlying reusable tech stack, enabling quick and low-cost innovations.",
+        "tags": "Technology, Innovation"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Swiggy One Membership",
+      "type": "Platform",
+      "attributes": {
+        "description": "A membership programme offering various benefits across Swiggy's offerings.",
+        "tags": "Product, Membership"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Quick Commerce",
+      "type": "Service",
+      "attributes": {
+        "description": "Pioneering service category for quick delivery of various items.",
+        "tags": "Core Service",
+        "year": "2020"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Instamart",
+      "type": "Service",
+      "attributes": {
+        "description": "Service providing quick delivery of groceries and household items, scaled rapidly.",
+        "scale": "124 cities (as of 31 March 2025) from 2 cities in less than 5 years of launch",
+        "tags": "Quick Commerce, Growth"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "10-minute Food Delivery",
+      "type": "Service",
+      "attributes": {
+        "description": "Expedited food delivery service offered as a benefit to Swiggy One members."
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Restaurant Reservations and Payments",
+      "type": "Service",
+      "attributes": {
+        "description": "Service for booking tables and making payments at restaurants, enhanced by Dineout acquisition.",
+        "tags": "Dining, Payments"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Events and Experiences",
+      "type": "Service",
+      "attributes": {
+        "description": "Service offering access to events and experiences as part of the Swiggy One membership."
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Quick Bites",
+      "type": "Service",
+      "attributes": {
+        "description": "Service offered as part of the Swiggy One membership programme."
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Co-branded Credit Card",
+      "type": "Product",
+      "attributes": {
+        "description": "A credit card offered as a benefit of the Swiggy One membership programme.",
+        "tags": "Financial Product"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Innovation-led Culture",
+      "type": "Capability",
+      "attributes": {
+        "description": "Integral part of Swiggy's DNA, encouraging constant ideation, experimentation, and iteration.",
+        "tags": "Culture, Strategy"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Scalability",
+      "type": "Capability",
+      "attributes": {
+        "description": "Capability to rapidly expand and manage growth across various businesses and geographies.",
+        "tags": "Growth, Business Strategy"
+      },
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "id": "Urban Convenience Platform",
+      "type": "Platform",
+      "attributes": {
+        "description": "Core platform for Swiggy's services, built by adding adjacent services over a decade",
+        "tags": "Strategy, Ecosystem",
+        "scale": "surpassed 120 million transacted users (2025)"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Swiggy Instamart",
+      "type": "Service",
+      "attributes": {
+        "description": "Quick commerce grocery delivery service",
+        "year": "2020",
+        "scale": "25 cities with over 400 dark stores and over 8,400 SKUs (2022)"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Swiggy Genie",
+      "type": "Service",
+      "attributes": {
+        "description": "Concierge delivery service",
+        "year": "2020"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Swiggy Minis",
+      "type": "Service",
+      "attributes": {
+        "description": "Service launched in 2022",
+        "year": "2022"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Swiggy-HDFC Bank co-branded credit card",
+      "type": "Product",
+      "attributes": {
+        "description": "Financial product in partnership with HDFC Bank",
+        "year": "2023"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Lynk",
+      "type": "Company",
+      "attributes": {
+        "description": "Acquired company, 100% stake acquired by Swiggy",
+        "year": "2023"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Swiggy Mall",
+      "type": "Product",
+      "attributes": {
+        "description": "Service integrated with Instamart",
+        "year": "2023"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Bolt",
+      "type": "Service",
+      "attributes": {
+        "description": "10-minute food delivery service",
+        "year": "2024"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Swiggy Scenes",
+      "type": "Service",
+      "attributes": {
+        "description": "Service for events and experiences",
+        "year": "2024"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "SNACC",
+      "type": "Service",
+      "attributes": {
+        "description": "Service launched in 2025",
+        "year": "2025"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "Pyng",
+      "type": "Service",
+      "attributes": {
+        "description": "Service launched in 2025",
+        "year": "2025"
+      },
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "id": "HDFC Bank",
+      "type": "Partner",
+      "attributes": {
+        "description": "Financial institution partner for co-branded credit card",
+        "role": "Co-branding Partner"
+      },
+      "provenance": [
+        7
       ]
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "source": "Swiggy",
+      "target": "Consumer Convenience Platform",
+      "relation": "operates",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Hyperlocal Commerce Platform",
+      "relation": "operates",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Unified Technology Platform",
+      "relation": "operates",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Food delivery",
+      "relation": "offers",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Quick Commerce",
+      "relation": "offers",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Instamart",
+      "relation": "offers",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Swiggy One Membership",
+      "relation": "offers",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Innovation-led Culture",
+      "relation": "enabled_by",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Technology",
+      "relation": "enabled_by",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Fulfilment",
+      "relation": "enabled_by",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Analytics",
+      "relation": "enabled_by",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Scalability",
+      "relation": "enabled_by",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy",
+      "target": "Urban Convenience Platform",
+      "relation": "operates",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Food delivery",
+      "relation": "encompasses",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Dining out and Events",
+      "relation": "encompasses",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Grocery and Household items delivery",
+      "relation": "encompasses",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Other hyperlocal services",
+      "relation": "encompasses",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Restaurant partners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Merchant partners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Brand partners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Delivery partners",
+      "relation": "supported_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Technology",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Analytics",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Fulfilment",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Consumer Convenience Platform",
+      "target": "Membership",
+      "relation": "enabled_by",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Food delivery",
+      "target": "Restaurant partners",
+      "relation": "supported_by",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One",
+      "target": "Membership",
+      "relation": "related_to",
+      "provenance": [
+        5
+      ]
+    },
+    {
+      "source": "Dineout",
+      "target": "Restaurant Reservations and Payments",
+      "relation": "related_to",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Hyperlocal Commerce Platform",
+      "target": "Food delivery",
+      "relation": "encompasses",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Hyperlocal Commerce Platform",
+      "target": "Quick Commerce",
+      "relation": "encompasses",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Hyperlocal Commerce Platform",
+      "target": "Instamart",
+      "relation": "encompasses",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Unified Technology Platform",
+      "target": "Innovation-led Culture",
+      "relation": "enables",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Unified Technology Platform",
+      "target": "Scalability",
+      "relation": "enables",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "10-minute Food Delivery",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "Food delivery",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "Instamart",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "Restaurant Reservations and Payments",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "Events and Experiences",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "Co-branded Credit Card",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Swiggy One Membership",
+      "target": "Quick Bites",
+      "relation": "includes",
+      "provenance": [
+        6
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Food delivery",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Swiggy Instamart",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Swiggy Genie",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Swiggy Minis",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Bolt",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Swiggy Scenes",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "SNACC",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Urban Convenience Platform",
+      "target": "Pyng",
+      "relation": "encompasses",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy-HDFC Bank co-branded credit card",
+      "target": "HDFC Bank",
+      "relation": "supported_by",
+      "provenance": [
+        7
+      ]
+    },
+    {
+      "source": "Swiggy Mall",
+      "target": "Swiggy Instamart",
+      "relation": "integrated_with",
+      "provenance": [
+        7
+      ]
+    }
+  ]
 }

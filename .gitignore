@@ -12,6 +12,9 @@ env/
 .vscode/
 .idea/
 
+presentation.md
+system_deep_dive.md
+
 # GraphRAG Output
 # output/ # Keeping output in git for this assignment as per deliverables usually, but user can uncomment if needed.
 # Actually, usually we don't commit output, but for an assignment it might be good to show.
