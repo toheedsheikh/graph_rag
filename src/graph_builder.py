@@ -68,6 +68,46 @@ class GraphBuilder:
             else:
                 logger.warning(f"Skipping edge {source} -> {target}: One or both nodes missing.")
 
+    def load_from_json(self, json_path: str):
+        """
+        Loads an existing graph from a JSON file (GraphRAG format) to enable incremental updates.
+        """
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Restore Nodes
+            for node_data in data.get("nodes", []):
+                node_id = node_data.get("id")
+                if node_id:
+                    self.graph.add_node(
+                        node_id, 
+                        type=node_data.get("type"), 
+                        attributes=node_data.get("attributes", {}),
+                        provenance=node_data.get("provenance", [])
+                    )
+
+            # Restore Edges
+            for edge_data in data.get("edges", []):
+                source = edge_data.get("source")
+                target = edge_data.get("target")
+                if source and target:
+                    self.graph.add_edge(
+                        source, 
+                        target, 
+                        relation=edge_data.get("relation"),
+                        provenance=edge_data.get("provenance", [])
+                    )
+            
+            logger.info(f"Loaded existing graph from {json_path} with {self.graph.number_of_nodes()} nodes and {self.graph.number_of_edges()} edges.")
+
+        except FileNotFoundError:
+            logger.warning(f"Graph file {json_path} not found. Starting with empty graph.")
+        except json.JSONDecodeError:
+             logger.error(f"Error decoding JSON from {json_path}. Starting with empty graph.")
+        except Exception as e:
+            logger.error(f"Failed to load graph from {json_path}: {e}")
+
     def export_json(self) -> Dict[str, Any]:
         """
         Exports the graph to a JSON format (GraphRAG-ready).

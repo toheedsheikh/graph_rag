@@ -32,6 +32,12 @@ class Pipeline:
         chunks = self.load_chunks()
         logger.info(f"Loaded {len(chunks)} chunks.")
 
+        # 1.5 Load Existing Graph (if persistence is enabled/file exists)
+        json_output_path = OUTPUT_DIR / "graph.json"
+        if os.path.exists(json_output_path):
+            logger.info(f"Found existing graph at {json_output_path}. Loading...")
+            self.graph_builder.load_from_json(json_output_path)
+            
         # 2. Process each chunk
         for chunk in chunks:
             chunk_id = chunk.get("id")
